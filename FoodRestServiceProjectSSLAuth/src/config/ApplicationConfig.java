@@ -6,7 +6,7 @@ import org.eclipse.persistence.jaxb.rs.MOXyJsonProvider;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 
-import service.FoodRestService;
+import service.FoodRestServiceSSLAuth;
 
 @ApplicationPath("rs")
 public class ApplicationConfig extends ResourceConfig {
@@ -15,7 +15,7 @@ public class ApplicationConfig extends ResourceConfig {
 	 * Constructor
 	 */
 	public ApplicationConfig() {
-		super(FoodRestService.class);
+		super(FoodRestServiceSSLAuth.class);
 		this.packages("service");
 		this.register(MOXyJsonProvider.class);
 		this.register(RolesAllowedDynamicFeature.class);

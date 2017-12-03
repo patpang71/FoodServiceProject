@@ -34,7 +34,7 @@ import domain.FoodManager;
 @Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
 @Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
 @Stateless
-public class FoodRestService {
+public class FoodRestServiceSSLAuth {
 	@Context
 	private UriInfo uriInfo;
 	
