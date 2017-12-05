@@ -1,0 +1,1 @@
+keytool -genkey -alias tomcat -keyalg RSA -keystore mykeystore.jks -storepass changeit
